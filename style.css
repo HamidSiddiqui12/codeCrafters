@@ -242,12 +242,17 @@ section {
   background-color: black;
 }
 
+#page1 {
+  background: url(./img/char2.png) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
+}
+
 #page2 {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: black;
-  background: url(./img/char3.jpg) no-repeat contain;
 }
 #page3 {
   position: relative;
@@ -255,6 +260,12 @@ section {
   width: 100vw;
   background-color: black;
   background: url(./img/char4.jpg) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#page2 {
+  background: url(./img/char3.png) no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
@@ -291,8 +302,7 @@ canvas {
 #page1 > #right-text > h3,
 #page4 > #right-text > h3 {
   font-weight: 400;
-  color: white;
-  text-shadow: 0px 0px 5px black;
+  color: #7c7c7c;
 }
 #page1 > #right-text > h1,
 #page4 > #right-text > h1 {
@@ -311,28 +321,13 @@ canvas {
 #page4 > #left-text > h1 {
   font-size: 50px;
   line-height: 1.5;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 3px black;
 }
 #page1 > #left-text > h3,
 #page4 > #left-text > h3 {
   color: white;
   font-weight: 400;
-  text-shadow: 0px 0px 5px black;
-}
-
-#page1 > #left-text {
-  text-shadow: 0px 0px 5px black;
-  color: #c1ff72;
-}
-
-#page1 > #right-text {
-  text-shadow: 10px 10px 5px black;
-  color: #00bf63;
-}
-
-#page1 > #left-text {
-  color: rgb(156, 206, 90);
-  text-shadow: 10px 10px 5px black;
+  color: #7c7c7c;
 }
 
 #page4 {
