@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survival Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h3>OceanOfGames</h3>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about" class="cta_download">Download</a></li>
+      </ul>
+    </nav>
+
+    <div id="main">
+      <div id="page">
+        <canvas></canvas>
+      </div>
+      <div id="page1">
+        <div id="right-text">
+          <h3>WILDERNESS ESCAPE: SURVIVE THE FOREST</h3>
+          <h1>
+            HAVE FUN
+            <br />
+            LET'S PLAY
+          </h1>
+        </div>
+        <div id="left-text">
+          <h1>
+            MAKE A STORY
+            <br />
+            TAKE A CHANCE
+            <br />
+            BUILD AND OWNED
+          </h1>
+          <h3>..CRAFT, BUILD, AND STAY ALIVE.</h3>
+        </div>
+      </div>
+      <div id="page2">
+        <div id="text1">
+          <h3>FOREST SURVIVAL / HAVE FUN</h3>
+          <h1>
+            ADAPT TO
+            <br />
+            CHANGING
+            <br />
+            SEASON.
+          </h1>
+        </div>
+        <div id="text2">
+          <p>
+            Discover hidden forest mysteries.
+            <br />
+            Coexist with or conquer the forest's creatures. <br />
+            Face dynamic survival scenarios.<br />
+            Your Forest Survival Story Awaits. Are You Ready?
+          </p>
+        </div>
+      </div>
+      <div id="page3">
+        <div id="text3">
+          <h3>FOREST SURVIVAL / PLAYGROUND</h3>
+          <h1>
+            FOREST
+            <br />
+            IS OUR
+            <br />
+            PLAYGROUND
+          </h1>
+        </div>
+      </div>
+
+      <div id="page4">
+        <div id="right-text">
+          <h3>WILDERNESS ESCAPE: SURVIVE THE FOREST</h3>
+          <h1>
+            <span style="text-decoration: underline">OCEAN OF GAMES</span>
+            <br />
+            <br />
+            <span
+              style="
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 10px;
+                cursor: pointer;
+              "
+              class="cta_footer"
+              >LET'S PLAY</span
+            >
+          </h1>
+        </div>
+        <div id="left-text">
+          <div class="char_block">
+            <img class="char" src="./img/00041.png" alt="character" />
+          </div>
+          <h1>
+            <br />
+            TAKE A CHANCE
+            <br />
+            BUILD AND OWNED
+          </h1>
+          <h3>..CRAFT, BUILD, AND STAY ALIVE.</h3>
+        </div>
+      </div>
+
+      <footer>
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          Made with <span style="color: red"> ♥ </span> WebHeads
+        </h1>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./character_script.js"></script>
+  </body>
+</html>

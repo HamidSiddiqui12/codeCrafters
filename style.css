@@ -13,6 +13,21 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body {
+  background-color: #15263f;
+  color: white;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
 #preloader {
   background: url(./img/loading-bar.gif) no-repeat center center;
   background-size: 30%;
@@ -24,20 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: "Chakra Petch", sans-serif;
-}
-
-body {
-  color: white;
-  overflow-x: hidden;
-  height: 100%;
-  width: 100%;
 }
 
 nav {
@@ -222,14 +223,17 @@ section {
 
 #main {
   position: relative;
-  background-color: #15263f;
 }
 
 #page {
   position: relative;
   height: 120vh;
   width: 100vw;
+  background: url(./img/char1.jpg) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
 }
+
 #page1,
 #page4 {
   position: relative;
@@ -237,17 +241,30 @@ section {
   width: 100vw;
   background-color: #15263f;
 }
+
+#page1 {
+  background: url(./img/char2.jpg) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
+}
+
 #page2 {
   position: relative;
   height: 100vh;
   width: 100vw;
   background-color: #15263f;
+  background: url(./img/char3.jpg) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
 }
 #page3 {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: #15263f;
+  background: url(./img/char4.jpg) no-repeat center center;
+  background-size: cover;
+  object-fit: cover;
 }
 
 #page4 {
@@ -263,7 +280,6 @@ canvas {
 #page > h3 {
   position: absolute;
   top: 55%;
-  font-family: gilroy;
   font-weight: 400;
   color: #7c7c7c;
   left: 5%;
@@ -344,45 +360,22 @@ canvas {
   font-size: 70px;
 }
 
-.cursor {
-  width: 80px;
-  height: 80px;
-  border: 1px solid white;
-  border-radius: 50%;
+#page4 > #left-text,
+#page4 > #right-text {
+  z-index: 10;
+}
+
+.char_block {
   position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-  animation: cursorAnim 0.5s infinite alternate;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -80%;
 }
 
-.cursor::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  border: 8px solid gray;
-  border-radius: 50%;
-  opacity: 0.5;
-  top: -8px;
-  left: -8px;
-  animation: cursorAnim2 0.5s infinite alternate;
-}
-
-@keyframes cursorAnim3 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-.expand {
-  animation: cursorAnim3 0.5s forwards;
-  border: 1px solid red;
+.char {
+  height: 40vh;
+  width: 40vw;
 }
