@@ -239,7 +239,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #15263f;
+  background-color: black;
 }
 
 #page1 {
@@ -252,16 +252,14 @@ section {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #15263f;
-  background: url(./img/char3.jpg) no-repeat center center;
-  background-size: cover;
-  object-fit: cover;
+  background-color: black;
+  background: url(./img/char3.jpg) no-repeat contain;
 }
 #page3 {
   position: relative;
   height: 90vh;
   width: 100vw;
-  background-color: #15263f;
+  background-color: black;
   background: url(./img/char4.jpg) no-repeat center center;
   background-size: cover;
   object-fit: cover;
@@ -299,12 +297,14 @@ canvas {
 #page1 > #right-text > h3,
 #page4 > #right-text > h3 {
   font-weight: 400;
-  color: #7c7c7c;
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }
 #page1 > #right-text > h1,
 #page4 > #right-text > h1 {
   line-height: 1.5;
   font-size: 50px;
+  text-shadow: 0px 0px 5px black;
 }
 #page1 > #left-text,
 #page4 > #left-text {
@@ -317,12 +317,36 @@ canvas {
 #page4 > #left-text > h1 {
   font-size: 50px;
   line-height: 1.5;
+  text-shadow: 0px 0px 5px black;
 }
 #page1 > #left-text > h3,
 #page4 > #left-text > h3 {
-  color: #7c7c7c;
+  color: white;
   font-weight: 400;
+  text-shadow: 0px 0px 5px black;
 }
+
+#page1 > #left-text {
+  text-shadow: 0px 0px 5px black;
+  color: #c1ff72;
+}
+
+#page1 > #right-text {
+  text-shadow: 10px 10px 5px black;
+  color: #00bf63;
+}
+
+#page1 > #left-text {
+  color: rgb(156, 206, 90);
+  text-shadow: 10px 10px 5px black;
+}
+
+#page4 {
+  background: url(./img/char2.1.jpeg) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
 #page2 > #text1 {
   position: absolute;
   top: 30%;
@@ -341,9 +365,11 @@ canvas {
   top: 55%;
   right: 10%;
   text-align: end;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 #page2 > #text2 > p {
-  color: #7c7c7c;
+  color: white;
   font-weight: 400;
 }
 #page3 > #text3 {
@@ -378,4 +404,29 @@ canvas {
 .char {
   height: 40vh;
   width: 40vw;
+}
+
+.contact {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: underline;
+}
+
+.contact:hover {
+  color: #7c7c7c;
+}
+
+.twit {
+  color: #1da1f2;
+}
+
+.twi {
+  color: #c58af9;
+}
+
+.disc {
+  color: #5c93eb;
 }
