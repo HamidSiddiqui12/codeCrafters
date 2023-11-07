@@ -242,12 +242,6 @@ section {
   background-color: black;
 }
 
-#page1 {
-  background: url(./img/char2.jpg) no-repeat center center;
-  background-size: cover;
-  object-fit: cover;
-}
-
 #page2 {
   position: relative;
   height: 100vh;
