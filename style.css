@@ -229,7 +229,7 @@ section {
   position: relative;
   height: 120vh;
   width: 100vw;
-  background: url(./img/char1.jpg) no-repeat center center;
+  background: url(./img/TATAKAI1.jpg) no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
@@ -243,7 +243,7 @@ section {
 }
 
 #page1 {
-  background: url(./img/char2.png) no-repeat center center;
+  background: url(./img/char2.jpg) no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
@@ -252,20 +252,19 @@ section {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: black;
 }
+
 #page3 {
   position: relative;
   height: 90vh;
   width: 100vw;
-  background-color: black;
   background: url(./img/char4.jpg) no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
 
 #page2 {
-  background: url(./img/char3.png) no-repeat center center;
+  background: url(./img/char3.jpg) no-repeat center center;
   background-size: cover;
   object-fit: cover;
 }
@@ -418,4 +417,30 @@ canvas {
 
 .disc {
   color: #5c93eb;
+}
+
+@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  canva {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+  }
+
+  .char {
+    display: none;
+  }
 }
